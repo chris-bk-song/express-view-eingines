@@ -7,6 +7,11 @@
 </head>
 <body>
   <h1><%= title %></h1>
-  <p>Today's Special is <%= special %></p>
+  <p>Today's Specials are</p>
+  <ul>
+    <% special.forEach(special => { %>
+    <li><%= special.text %></li>  
+    <% }) %>
+  </ul>
 </body>
 </html>
